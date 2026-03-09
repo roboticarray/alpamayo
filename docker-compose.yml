@@ -1,0 +1,27 @@
+# Alpamayo 1 — local inference
+# Requires: NVIDIA GPU ≥24GB, nvidia-container-toolkit
+#
+# 1. Request HuggingFace access: Physical AI AV Dataset, Alpamayo-R1-10B
+# 2. Run: HF_TOKEN=hf_xxx docker compose run --rm alpamayo
+
+services:
+  alpamayo:
+    build: .
+    image: alpamayo:local
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+      - HF_HOME=/app/.cache/huggingface
+    volumes:
+      - alpamayo-cache:/app/.cache
+    stdin_open: true
+    tty: true
+
+volumes:
+  alpamayo-cache:
