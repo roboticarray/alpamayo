@@ -1,8 +1,32 @@
 # Creating the roboticarray forks
 
-This session could not create the forks itself: the Claude GitHub App installation on roboticarray returned `403 Resource not accessible by integration` for repo creation, and cross-owner repositories cannot be attached, so the `fork_repository` API was refused. Two ways to unblock:
+## One command
 
-1. **Fork manually with the GitHub CLI** (fastest; run on any machine where `gh auth status` shows you as a roboticarray member):
+Run this where `gh auth status` shows you as a roboticarray member with permission to create repositories:
+
+```bash
+git clone -b claude/open-source-world-models-kohnlo \
+  https://github.com/roboticarray/alpamayo.git /tmp/wm-reviews \
+  && /tmp/wm-reviews/docs/world-models/tools/fork_and_push.sh
+```
+
+It forks all 33 upstreams into roboticarray, then pushes each repo's `REVIEW.md`, `CLAUDE.md`, `QUICKSTART.md` and Dockerfile onto a `roboticarray` branch in its fork. Add `--dry-run` first to see exactly what it would do without changing anything. The script is re-runnable: existing forks are skipped, pushes are idempotent, and a failed run can simply be run again to retry only what failed.
+
+Useful variations:
+
+```bash
+fork_and_push.sh --dry-run          # print the plan, change nothing
+fork_and_push.sh Vista opendw       # only these two repos
+SKIP_PUSH=1 fork_and_push.sh        # fork only
+SKIP_FORK=1 fork_and_push.sh        # push only, forks already exist
+FORK_ORG=myorg fork_and_push.sh     # different destination org
+```
+
+## Why this could not be done from the Claude session
+
+The Claude GitHub App installation on roboticarray returned `403 Resource not accessible by integration` for repository creation, and the session refused cross-owner attachments, so the fork API was unavailable. Granting the app Administration read/write on the org (Settings, GitHub Apps, Claude, Repository permissions) would let a future session do this directly. Forks created either way must be enabled for Claude at https://github.com/apps/claude/installations/select_target before a session can push to them.
+
+## Doing it by hand instead
 
 ```bash
 gh repo fork nvidia-cosmos/cosmos-predict2.5 --org roboticarray --clone=false --default-branch-only
@@ -42,13 +66,7 @@ gh repo fork NVIDIA/flashdreams --org roboticarray --clone=false --default-branc
 
 2. **Grant the Claude GitHub App repository-creation permission** on the roboticarray org (Settings, GitHub Apps, Claude, Repository permissions: Administration read/write), then ask Claude Code to fork. Forks created either way must be enabled for Claude at https://github.com/apps/claude/installations/select_target so a session can push to them.
 
-Once forks exist, push the files from this directory into each one:
-
-```bash
-docs/world-models/tools/push_to_forks.sh            # all repos
-docs/world-models/tools/push_to_forks.sh Vista nwm  # a subset
-DRY_RUN=1 docs/world-models/tools/push_to_forks.sh  # rehearse
-```
+Once forks exist, push the files with `tools/push_to_forks.sh` (the push half of `fork_and_push.sh`, kept separate for when the forks already exist).
 
 The script clones each fork, creates (or updates) a `roboticarray` branch off the default branch, copies `REVIEW.md`, `CLAUDE.md`, `QUICKSTART.md`, and the Dockerfile (as `Dockerfile.roboticarray` if upstream already has one), commits, and pushes. Upstream code is never modified, so `git fetch upstream && git merge` stays clean.
 
