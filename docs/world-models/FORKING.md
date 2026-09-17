@@ -35,6 +35,9 @@ gh repo fork etched-ai/open-oasis --org roboticarray --clone=false --default-bra
 gh repo fork danijar/dreamerv3 --org roboticarray --clone=false --default-branch-only
 gh repo fork shengshu-ai/minWM --org roboticarray --clone=false --default-branch-only
 gh repo fork GigaAI-research/ReconDreamer --org roboticarray --clone=false --default-branch-only
+gh repo fork NVIDIA/cosmos --org roboticarray --clone=false --default-branch-only
+gh repo fork NVIDIA/cosmos-framework --org roboticarray --clone=false --default-branch-only
+gh repo fork NVIDIA/flashdreams --org roboticarray --clone=false --default-branch-only
 ```
 
 2. **Grant the Claude GitHub App repository-creation permission** on the roboticarray org (Settings, GitHub Apps, Claude, Repository permissions: Administration read/write), then ask Claude Code to fork. Forks created either way must be enabled for Claude at https://github.com/apps/claude/installations/select_target so a session can push to them.
@@ -49,7 +52,7 @@ DRY_RUN=1 docs/world-models/tools/push_to_forks.sh  # rehearse
 
 The script clones each fork, creates (or updates) a `roboticarray` branch off the default branch, copies `REVIEW.md`, `CLAUDE.md`, `QUICKSTART.md`, and the Dockerfile (as `Dockerfile.roboticarray` if upstream already has one), commits, and pushes. Upstream code is never modified, so `git fetch upstream && git merge` stays clean.
 
-## Repo list (30)
+## Repo list (33)
 
 | Upstream | Fork | Local review dir |
 |---|---|---|
@@ -83,3 +86,6 @@ The script clones each fork, creates (or updates) a `roboticarray` branch off th
 | [danijar/dreamerv3](https://github.com/danijar/dreamerv3) | roboticarray/dreamerv3 | [dreamerv3/](./dreamerv3/) |
 | [shengshu-ai/minWM](https://github.com/shengshu-ai/minWM) | roboticarray/minWM | [minWM/](./minWM/) |
 | [GigaAI-research/ReconDreamer](https://github.com/GigaAI-research/ReconDreamer) | roboticarray/ReconDreamer | [ReconDreamer/](./ReconDreamer/) |
+| [NVIDIA/cosmos](https://github.com/NVIDIA/cosmos) | roboticarray/cosmos | [cosmos/](./cosmos/) |
+| [NVIDIA/cosmos-framework](https://github.com/NVIDIA/cosmos-framework) | roboticarray/cosmos-framework | [cosmos-framework/](./cosmos-framework/) |
+| [NVIDIA/flashdreams](https://github.com/NVIDIA/flashdreams) | roboticarray/flashdreams | [flashdreams/](./flashdreams/) |
