@@ -1,0 +1,23 @@
+{
+  "repo": "AgibotTech/Genie-Envisioner",
+  "dir": "Genie-Envisioner",
+  "commit": "d41358f7548f2cd9fc4b79fcdf7d86d15a8d7b1e",
+  "code_license": "CC BY-NC-SA 4.0 (README only, no LICENSE file); vendored diffusers/LTX/Cosmos/openpi dirs Apache-2.0",
+  "weights_license": "LTX-Video Open Weights License for GE-Base; NVIDIA Open Model License rides along for GE-Sim (Cosmos-Predict2 base); CC BY-NC-SA 4.0 otherwise",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 3,
+    "security": 4,
+    "license": 1,
+    "extensibility": 4,
+    "physics": 4,
+    "applications": 3,
+    "motion_control": 5
+  },
+  "overall": 3.5,
+  "verdict": "TRIAL",
+  "one_liner": "Only repo here that both emits action chunks and simulates them, with closed-loop CALVIN/LIBERO scores - but CC BY-NC-SA.",
+  "vram_gb": null,
+  "action_conditioned": true,
+  "weights_public": true
+}

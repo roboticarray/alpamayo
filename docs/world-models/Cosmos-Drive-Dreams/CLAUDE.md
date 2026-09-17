@@ -11,7 +11,7 @@ See `REVIEW.md` for the assessment, `QUICKSTART.md` for zero-to-first-output.
 
 | Path | What |
 |---|---|
-| `scripts/` | `download.py` (dataset), `rewrite_caption.py` (Qwen3 prompt augmentation), `generate_video_single_view.py`, `generate_video_multi_view.py` |
+| `scripts/` | `download.py`, `rewrite_caption.py` (Qwen3), `generate_video_single_view.py`, `generate_video_multi_view.py` |
 | `cosmos-drive-dreams-toolkits/` | The reusable part: `render_from_rds_hq.py`, `visualize_rds_hq.py` (viser GUI + novel ego trajectories), `convert_waymo_to_rds_hq.py`, `rectify_ftheta_to_pinhole.py`, `convert_lidar_pointcloud_to_rangemap.py`, `create_t5_embed*.py`, `config/dataset_*.json`, `utils/` |
 | `cosmos-transfer-lidargen/` | Self-contained LiDAR subtree on Cosmos-Predict1: `cosmos_predict1/`, `examples/`, its own `Dockerfile` and `INSTALL.md` |
 | `cosmos-transfer1/` | **git submodule** (nvidia-cosmos/cosmos-transfer1) — the generation backbone. Empty until initialised. |
@@ -89,10 +89,9 @@ Env: `HF_TOKEN`, `HF_HOME`, `CUDA_HOME`, `PYTHONPATH=cosmos-transfer1`,
 
 ## Gotchas found during review
 
-- `requirements.txt` is partly wrong. `apex==0.9.10dev` is **not** NVIDIA Apex (the code
-  imports `apex.multi_tensor_apply`; build it from source if you need the LidarGen training
-  path). `attr==0.3.2` is unnecessary — `import attr` comes from `attrs`. `pillow` appears
-  twice. Fix these in the fork.
+- `requirements.txt` is partly wrong: `apex==0.9.10dev` is **not** NVIDIA Apex (the code
+  imports `apex.multi_tensor_apply` — build it from source for the LidarGen training path),
+  `attr==0.3.2` is unnecessary (`import attr` comes from `attrs`), `pillow` appears twice.
 - `viser @ git+https://github.com/yifanlu0227/viser.git` is unpinned and from a personal
   account. Pin it to a commit SHA before anyone installs this.
 - Two `.gitmodules` are tracked; one filename starts with an invisible U+200E character.
@@ -110,10 +109,10 @@ Env: `HF_TOKEN`, `HF_HOME`, `CUDA_HOME`, `PYTHONPATH=cosmos-transfer1`,
 
 ## Conventions
 
-- No formatter, linter, type checker or CI configured. Plain argparse scripts, snake_case.
+- No formatter, linter, type checker or CI. Plain argparse scripts, snake_case.
 - Config: JSON dataset/camera configs (`cosmos-drive-dreams-toolkits/config/dataset_*.json`)
   and JSON controlnet specs (`assets/sample_av_*_spec.json`); LidarGen uses Cosmos-Predict1
-  LazyConfig (executable `.py` configs).
+  LazyConfig (executable `.py`).
 - Data format: **RDS-HQ** — a directory-of-folders layout (`pose`, `vehicle_pose`,
   `all_object_info`, `captions`, `ftheta_intrinsic`, `pinhole_intrinsic`, `3d_*`,
   `lidar_raw`). Convert into it rather than changing the code.

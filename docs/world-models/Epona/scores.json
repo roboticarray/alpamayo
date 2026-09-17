@@ -1,0 +1,23 @@
+{
+  "repo": "Kevin-thu/Epona",
+  "dir": "Epona",
+  "commit": "69b24c55f5ab8b3ffde8fa55e9f833bfe64d2c68",
+  "code_license": "MIT",
+  "weights_license": "MIT",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 2,
+    "security": 2,
+    "license": 5,
+    "extensibility": 3,
+    "physics": 3,
+    "applications": 2,
+    "motion_control": 4
+  },
+  "overall": 3.1,
+  "verdict": "TRIAL",
+  "one_liner": "MIT front-camera diffusion world model that both consumes and predicts ego trajectories; no tests, no metrics, pickle weights.",
+  "vram_gb": 24,
+  "action_conditioned": true,
+  "weights_public": true
+}
