@@ -80,6 +80,9 @@ def main() -> None:
         f"Generated {date.today().isoformat()} from `*/scores.json` by `tools/build_index.py`. "
         f"{len(rows)} repositories reviewed against [RUBRIC.md](RUBRIC.md). Scores are 1-5; Overall is the unweighted mean.",
         "",
+        "**Start with [FINDINGS.md](FINDINGS.md)** for the synthesis: what to adopt, the licensing filter, "
+        "the metric-scale trap, and recommended next steps.",
+        "",
         "Verdicts: **ADOPT** integrate now, **TRIAL** worth a spike, **WATCH** track only, **SKIP**.",
         "",
         "## Ranked for motion control",
