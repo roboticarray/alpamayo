@@ -1,0 +1,23 @@
+{
+  "repo": "microsoft/MineWorld",
+  "dir": "MineWorld",
+  "commit": "9f49efbcc68a5f0cf60e78f0abc566eac409282f",
+  "code_license": "MIT",
+  "weights_license": "Unknown - weights withdrawn from HF in May 2025; microsoft/mineworld returns 404 as of 2026-09-17",
+  "scores": {
+    "usefulness": 1,
+    "code_quality": 2,
+    "security": 2,
+    "license": 3,
+    "extensibility": 2,
+    "physics": 2,
+    "applications": 1,
+    "motion_control": 2
+  },
+  "overall": 1.9,
+  "verdict": "SKIP",
+  "one_liner": "Weights pulled from HF and still 404 after 16 months; value is architectural only - Diagonal Decoding and the IDM controllability metric.",
+  "vram_gb": 24,
+  "action_conditioned": true,
+  "weights_public": false
+}

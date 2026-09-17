@@ -1,0 +1,23 @@
+{
+  "repo": "robbyant/lingbot-va",
+  "dir": "lingbot-va",
+  "commit": "7c6ffa9bfc4b83582cafc860fab4c82cc7deeeeb",
+  "code_license": "Apache-2.0 (LICENSE.txt)",
+  "weights_license": "Apache-2.0 (HF cards on all three robbyant/lingbot-va-* repos, sharded safetensors); the released post-training datasets are CC BY-NC-SA 4.0",
+  "scores": {
+    "usefulness": 5,
+    "code_quality": 3,
+    "security": 3,
+    "license": 4,
+    "extensibility": 5,
+    "physics": 4,
+    "applications": 4,
+    "motion_control": 5
+  },
+  "overall": 4.1,
+  "verdict": "ADOPT",
+  "one_liner": "Causal AR video-action model with KV cache, 30-D EEF+joint action slots, Apache-2.0 safetensors, and SOTA closed-loop RoboTwin/LIBERO.",
+  "vram_gb": 24,
+  "action_conditioned": true,
+  "weights_public": true
+}

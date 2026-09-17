@@ -1,6 +1,6 @@
 # Open-source world models: roboticarray review index
 
-Generated 2026-09-17 from `*/scores.json` by `tools/build_index.py`. 30 repositories reviewed against [RUBRIC.md](RUBRIC.md). Scores are 1-5; Overall is the unweighted mean.
+Generated 2026-09-17 from `*/scores.json` by `tools/build_index.py`. 33 repositories reviewed against [RUBRIC.md](RUBRIC.md). Scores are 1-5; Overall is the unweighted mean.
 
 Verdicts: **ADOPT** integrate now, **TRIAL** worth a spike, **WATCH** track only, **SKIP**.
 
@@ -12,6 +12,7 @@ Sorted by motion-control score, then overall.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | [NVIDIA/cosmos-framework](cosmos-framework/REVIEW.md) | **4.6** | ADOPT | 5 | 5 | 3 | 5 | 5 | 4 | 5 | 5 | yes | yes | 80 | OpenMDW-1.1 | Cosmos 3 training/serving framework: 30+ embodiments, AV 9D ego-pose policy and dynamics modes, closed-loop policy servers. |
 | [NVIDIA/flashdreams](flashdreams/REVIEW.md) | **4.5** | ADOPT | 5 | 5 | 5 | 4 | 5 | 3 | 4 | 5 | yes | no | 80 | Apache-2.0 (BSD-3-Clause and Zlib vendored subtrees, REUSE 3.3 compliant) | Apache-2.0 real-time world-model runtime; closed driving loop at 30 fps with ego kinematics, but AV weights are gated. |
+| [robbyant/lingbot-va](lingbot-va/REVIEW.md) | **4.1** | ADOPT | 5 | 3 | 3 | 4 | 5 | 4 | 4 | 5 | yes | yes | 24 | Apache-2.0 (LICENSE.txt) | Causal AR video-action model with KV cache, 30-D EEF+joint action slots, Apache-2.0 safetensors, and SOTA closed-loop RoboTwin/LIBERO. |
 | [dexmal/opendw](opendw/REVIEW.md) | **4.0** | ADOPT | 4 | 4 | 3 | 5 | 5 | 3 | 3 | 5 | yes | yes | ? | Apache-2.0 (LICENSE, pyproject.toml) | Apache-2.0 world-action model with a 32-D padded cross-embodiment action interface; best-engineered repo here, but publishes zero results. |
 | [thu-ml/Motus](Motus/REVIEW.md) | **3.8** | ADOPT | 4 | 3 | 2 | 5 | 4 | 4 | 3 | 5 | yes | yes | 24 | Apache-2.0 (LICENSE) | Apache-2.0 top to bottom: 8B MoT that is world model, VLA and IDM at once, 87% closed-loop on RoboTwin 2.0, joint-space actions. |
 | [AgibotTech/Genie-Envisioner](Genie-Envisioner/REVIEW.md) | **3.5** | TRIAL | 4 | 3 | 4 | 1 | 4 | 4 | 3 | 5 | yes | yes | ? | CC BY-NC-SA 4.0 (README only, no LICENSE file); vendored diffusers/LTX/Cosmos/openpi dirs Apache-2.0 | Only repo here that both emits action chunks and simulates them, with closed-loop CALVIN/LIBERO scores - but CC BY-NC-SA. |
@@ -37,7 +38,9 @@ Sorted by motion-control score, then overall.
 | [facebookresearch/nwm](nwm/REVIEW.md) | **2.5** | WATCH | 3 | 2 | 2 | 1 | 3 | 3 | 3 | 3 | yes | no | 24 | CC-BY-NC-4.0 | Action- and time-conditioned diffusion world model for robot navigation with CEM planning; NC-licensed, gated weights, offline-only. |
 | [GigaAI-research/DriveDreamer4D](DriveDreamer4D/REVIEW.md) | **2.1** | SKIP | 2 | 2 | 2 | 1 | 3 | 2 | 2 | 3 | no | no | 24 | none (no LICENSE file; nvdiffrast submodule is NVIDIA research-only, smplx non-commercial) | DriveStudio fork minus its training script; the world model and cousin-data strategy it is named for were never released. |
 | [nvidia-cosmos/cosmos-transfer2.5](cosmos-transfer2.5/REVIEW.md) | **3.3** | TRIAL | 4 | 4 | 3 | 3 | 4 | 2 | 4 | 2 | no | yes | 65.4 | Apache-2.0 | Multi-ControlNet video restyler for sim2real/real2real augmentation; strong AV multiview data factory, no actions or dynamics. |
+| [etched-ai/open-oasis](open-oasis/REVIEW.md) | **2.5** | SKIP | 2 | 3 | 4 | 4 | 3 | 1 | 1 | 2 | yes | yes | 12 | MIT | Dead 2024 Minecraft demo with 1.6s memory, but the cleanest minimal action-conditioning reference: 25-dim float vector into one Linear. |
 | [Tencent-Hunyuan/HY-World-2.0](HY-World-2.0/REVIEW.md) | **2.4** | SKIP | 3 | 3 | 2 | 1 | 3 | 2 | 3 | 2 | no | yes | ? | Tencent HY-WORLD 2.0 Community License (territory excludes EU/UK/South Korea; 1M MAU gate; Sec 5(b) forbids using Output to improve any other AI model) | Static 3D asset generator for Isaac Sim, no action space or dynamics; licence Sec 5(b) forbids using output to improve other AI models. |
+| [microsoft/MineWorld](MineWorld/REVIEW.md) | **1.9** | SKIP | 1 | 2 | 2 | 3 | 2 | 2 | 1 | 2 | yes | no | 24 | MIT | Weights pulled from HF and still 404 after 16 months; value is architectural only - Diagonal Decoding and the IDM controllability metric. |
 | [GigaAI-research/ReconDreamer](ReconDreamer/REVIEW.md) | **1.5** | SKIP | 2 | 1 | 2 | 1 | 2 | 1 | 1 | 2 | no | no | 24 | none (no LICENSE file; diff-gaussian-rasterization submodule is Inria/MPII research-only) | Street Gaussians plus a lateral-camera-shift render loop; DriveRestorer, the named contribution, is absent and so is any license. |
 | [open-gigaai/giga-world-0](giga-world-0/REVIEW.md) | **2.4** | WATCH | 2 | 3 | 3 | 5 | 2 | 1 | 2 | 1 | no | yes | ? | Apache-2.0 (LICENSE) | 701-line shim over three external frameworks; text+image-to-video only, no action conditioning, and the 3D half of the paper is unreleased. |
 
@@ -68,6 +71,7 @@ Sorted by motion-control score, then overall.
 
 | Repo | Overall | Verdict | Useful | Code | Sec | Lic | Ext | Phys | Apps | Motion | Action-cond. | Weights | VRAM GB | Code license | Summary |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| [robbyant/lingbot-va](lingbot-va/REVIEW.md) | **4.1** | ADOPT | 5 | 3 | 3 | 4 | 5 | 4 | 4 | 5 | yes | yes | 24 | Apache-2.0 (LICENSE.txt) | Causal AR video-action model with KV cache, 30-D EEF+joint action slots, Apache-2.0 safetensors, and SOTA closed-loop RoboTwin/LIBERO. |
 | [dexmal/opendw](opendw/REVIEW.md) | **4.0** | ADOPT | 4 | 4 | 3 | 5 | 5 | 3 | 3 | 5 | yes | yes | ? | Apache-2.0 (LICENSE, pyproject.toml) | Apache-2.0 world-action model with a 32-D padded cross-embodiment action interface; best-engineered repo here, but publishes zero results. |
 | [thu-ml/Motus](Motus/REVIEW.md) | **3.8** | ADOPT | 4 | 3 | 2 | 5 | 4 | 4 | 3 | 5 | yes | yes | 24 | Apache-2.0 (LICENSE) | Apache-2.0 top to bottom: 8B MoT that is world model, VLA and IDM at once, 87% closed-loop on RoboTwin 2.0, joint-space actions. |
 | [AgibotTech/Genie-Envisioner](Genie-Envisioner/REVIEW.md) | **3.5** | TRIAL | 4 | 3 | 4 | 1 | 4 | 4 | 3 | 5 | yes | yes | ? | CC BY-NC-SA 4.0 (README only, no LICENSE file); vendored diffusers/LTX/Cosmos/openpi dirs Apache-2.0 | Only repo here that both emits action chunks and simulates them, with closed-loop CALVIN/LIBERO scores - but CC BY-NC-SA. |
@@ -91,7 +95,9 @@ Sorted by motion-control score, then overall.
 | [shengshu-ai/minWM](minWM/REVIEW.md) | **3.8** | ADOPT | 5 | 5 | 4 | 3 | 5 | 2 | 2 | 4 | yes | yes | 24 | Apache-2.0, except minwm/modeling/hy15/ which is the Tencent Hunyuan Community License (no EU/UK/South Korea; derivatives bound; output-restriction) | The only repo shipping the full SFT-to-DMD training pipeline; PRoPE takes continuous 6-DoF poses, so our own action space is a supported workflow. |
 | [SkyworkAI/Matrix-Game](Matrix-Game/REVIEW.md) | **3.6** | TRIAL | 4 | 3 | 3 | 5 | 4 | 3 | 3 | 4 | yes | yes | 80 | Apache-2.0 (Matrix-Game-3/LICENSE.txt); repo root LICENSE is MIT | MG-3.0 conditions on keyboard+mouse AND full SE(3) extrinsics, with FOV-overlap memory retrieval worth stealing; Apache-2.0 throughout. |
 | [robbyant/lingbot-world](lingbot-world/REVIEW.md) | **2.9** | WATCH | 3 | 2 | 3 | 5 | 3 | 2 | 2 | 3 | yes | yes | 640 | Apache-2.0 | Apache-2.0 Wan2.2 fork with continuous SE(3) Plucker camera conditioning, but scale-normalized, no training code, repo abandoned. |
+| [etched-ai/open-oasis](open-oasis/REVIEW.md) | **2.5** | SKIP | 2 | 3 | 4 | 4 | 3 | 1 | 1 | 2 | yes | yes | 12 | MIT | Dead 2024 Minecraft demo with 1.6s memory, but the cleanest minimal action-conditioning reference: 25-dim float vector into one Linear. |
 | [Tencent-Hunyuan/HY-World-2.0](HY-World-2.0/REVIEW.md) | **2.4** | SKIP | 3 | 3 | 2 | 1 | 3 | 2 | 3 | 2 | no | yes | ? | Tencent HY-WORLD 2.0 Community License (territory excludes EU/UK/South Korea; 1M MAU gate; Sec 5(b) forbids using Output to improve any other AI model) | Static 3D asset generator for Isaac Sim, no action space or dynamics; licence Sec 5(b) forbids using output to improve other AI models. |
+| [microsoft/MineWorld](MineWorld/REVIEW.md) | **1.9** | SKIP | 1 | 2 | 2 | 3 | 2 | 2 | 1 | 2 | yes | no | 24 | MIT | Weights pulled from HF and still 404 after 16 months; value is architectural only - Diagonal Decoding and the IDM controllability metric. |
 
 ## Other
 

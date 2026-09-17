@@ -1,0 +1,23 @@
+{
+  "repo": "etched-ai/open-oasis",
+  "dir": "open-oasis",
+  "commit": "f59deef2c019c212bd0c5a3a5b986a51f3701847",
+  "code_license": "MIT",
+  "weights_license": "MIT (Etched/oasis-500m) but the HF repo is gated; trained on OpenAI VPT contractor footage whose terms ride along",
+  "scores": {
+    "usefulness": 2,
+    "code_quality": 3,
+    "security": 4,
+    "license": 4,
+    "extensibility": 3,
+    "physics": 1,
+    "applications": 1,
+    "motion_control": 2
+  },
+  "overall": 2.5,
+  "verdict": "SKIP",
+  "one_liner": "Dead 2024 Minecraft demo with 1.6s memory, but the cleanest minimal action-conditioning reference: 25-dim float vector into one Linear.",
+  "vram_gb": 12,
+  "action_conditioned": true,
+  "weights_public": true
+}
