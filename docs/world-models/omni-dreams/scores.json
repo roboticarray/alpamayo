@@ -1,0 +1,23 @@
+{
+  "repo": "nv-tlabs/omni-dreams",
+  "dir": "omni-dreams",
+  "commit": "cd85f399190393a6f5247b2c080b2cdd7a0adff7",
+  "code_license": "Apache-2.0",
+  "weights_license": "NVIDIA Open Model License (gated; possibly org-restricted). Dataset under separate NuRec Dataset License Agreement",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 4,
+    "security": 3,
+    "license": 3,
+    "extensibility": 3,
+    "physics": 3,
+    "applications": 2,
+    "motion_control": 4
+  },
+  "overall": 3.3,
+  "verdict": "TRIAL",
+  "one_liner": "Real-time causal multi-camera driving world model, trajectory-conditioned and closed-loop-capable; inference lives in FlashDreams.",
+  "vram_gb": 80,
+  "action_conditioned": true,
+  "weights_public": true
+}

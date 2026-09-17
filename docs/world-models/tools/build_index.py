@@ -8,8 +8,8 @@ from __future__ import annotations
 
 import json
 import pathlib
-import statistics
 from datetime import date
+from decimal import ROUND_HALF_UP, Decimal
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DIMS = [
@@ -43,7 +43,10 @@ def load() -> list[dict]:
             continue
         d.setdefault("dir", p.parent.name)
         s = d["scores"]
-        d["overall"] = round(statistics.mean(s[k] for k, _ in DIMS), 1)
+        # Round half up so the index matches the figure written in each REVIEW.md
+        # (Python's round() is banker's rounding: round(3.25, 1) == 3.2).
+        mean = Decimal(sum(s[k] for k, _ in DIMS)) / Decimal(len(DIMS))
+        d["overall"] = float(mean.quantize(Decimal("0.1"), rounding=ROUND_HALF_UP))
         rows.append(d)
     return rows
 

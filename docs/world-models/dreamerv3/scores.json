@@ -1,0 +1,23 @@
+{
+  "repo": "danijar/dreamerv3",
+  "dir": "dreamerv3",
+  "commit": "e3f02248693a79dc8b0ebd62c93683888ddaccfe",
+  "code_license": "MIT",
+  "weights_license": "N/A - no pretrained weights released",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 4,
+    "security": 3,
+    "license": 5,
+    "extensibility": 4,
+    "physics": 3,
+    "applications": 4,
+    "motion_control": 4
+  },
+  "overall": 3.9,
+  "verdict": "TRIAL",
+  "one_liner": "MIT JAX model-based RL that learns policies in imagination with fixed hyperparameters; a learner for our sims, not a pretrained world model.",
+  "vram_gb": 40,
+  "action_conditioned": true,
+  "weights_public": false
+}
