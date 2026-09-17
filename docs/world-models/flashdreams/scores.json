@@ -1,0 +1,23 @@
+{
+  "repo": "NVIDIA/flashdreams",
+  "dir": "flashdreams",
+  "commit": "2dbfdec049182aea52edcb72998c73b031fb4ff7",
+  "code_license": "Apache-2.0 (BSD-3-Clause and Zlib vendored subtrees, REUSE 3.3 compliant)",
+  "weights_license": "none shipped; nvidia/omni-dreams-models is gated (NVIDIA Open Model License)",
+  "scores": {
+    "usefulness": 5,
+    "code_quality": 5,
+    "security": 5,
+    "license": 4,
+    "extensibility": 5,
+    "physics": 3,
+    "applications": 4,
+    "motion_control": 5
+  },
+  "overall": 4.5,
+  "verdict": "ADOPT",
+  "one_liner": "Apache-2.0 real-time world-model runtime; closed driving loop at 30 fps with ego kinematics, but AV weights are gated.",
+  "vram_gb": 80,
+  "action_conditioned": true,
+  "weights_public": false
+}

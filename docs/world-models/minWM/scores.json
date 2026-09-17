@@ -1,0 +1,23 @@
+{
+  "repo": "shengshu-ai/minWM",
+  "dir": "minWM",
+  "commit": "2a54f4da5ffc9676c02bb61aa1a2cb22a52a84ff",
+  "code_license": "Apache-2.0, except minwm/modeling/hy15/ which is the Tencent Hunyuan Community License (no EU/UK/South Korea; derivatives bound; output-restriction)",
+  "weights_license": "Untagged on HF. HY15 line is THCL by derivation; the Wan21 line was trained on HunyuanVideo-generated data (THIRD_PARTY_LICENSES.md:40-41), so the THCL output restriction may reach it too.",
+  "scores": {
+    "usefulness": 5,
+    "code_quality": 5,
+    "security": 4,
+    "license": 3,
+    "extensibility": 5,
+    "physics": 2,
+    "applications": 2,
+    "motion_control": 4
+  },
+  "overall": 3.8,
+  "verdict": "ADOPT",
+  "one_liner": "The only repo shipping the full SFT-to-DMD training pipeline; PRoPE takes continuous 6-DoF poses, so our own action space is a supported workflow.",
+  "vram_gb": 24,
+  "action_conditioned": true,
+  "weights_public": true
+}
