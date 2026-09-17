@@ -1,0 +1,23 @@
+{
+  "repo": "Tencent-Hunyuan/HY-World-2.0",
+  "dir": "HY-World-2.0",
+  "commit": "df9988efb87bfc0f4947eb3889411cf957478b06",
+  "code_license": "Tencent HY-WORLD 2.0 Community License (territory excludes EU/UK/South Korea; 1M MAU gate; Sec 5(b) forbids using Output to improve any other AI model)",
+  "weights_license": "Same Tencent Community License (HF: license:other). WorldStereo-2 mirrored at hanshanxue/WorldStereo tagged MIT - inconsistent, do not rely on it.",
+  "scores": {
+    "usefulness": 3,
+    "code_quality": 3,
+    "security": 2,
+    "license": 1,
+    "extensibility": 3,
+    "physics": 2,
+    "applications": 3,
+    "motion_control": 2
+  },
+  "overall": 2.4,
+  "verdict": "SKIP",
+  "one_liner": "Static 3D asset generator for Isaac Sim, no action space or dynamics; licence Sec 5(b) forbids using output to improve other AI models.",
+  "vram_gb": null,
+  "action_conditioned": false,
+  "weights_public": true
+}

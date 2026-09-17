@@ -1,0 +1,23 @@
+{
+  "repo": "thu-ml/Motus",
+  "dir": "Motus",
+  "commit": "f771216802b8a1601599422f12088bee3c068c14",
+  "code_license": "Apache-2.0 (LICENSE)",
+  "weights_license": "Apache-2.0 (HF cards on all three motus-robotics repos; Wan2.2-TI2V-5B and Qwen3-VL-2B-Instruct bases also Apache-2.0)",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 3,
+    "security": 2,
+    "license": 5,
+    "extensibility": 4,
+    "physics": 4,
+    "applications": 3,
+    "motion_control": 5
+  },
+  "overall": 3.8,
+  "verdict": "ADOPT",
+  "one_liner": "Apache-2.0 top to bottom: 8B MoT that is world model, VLA and IDM at once, 87% closed-loop on RoboTwin 2.0, joint-space actions.",
+  "vram_gb": 24,
+  "action_conditioned": true,
+  "weights_public": true
+}

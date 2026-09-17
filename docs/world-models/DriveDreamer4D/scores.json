@@ -1,0 +1,23 @@
+{
+  "repo": "GigaAI-research/DriveDreamer4D",
+  "dir": "DriveDreamer4D",
+  "commit": "7500961a9b3ca4fe6040d39b7ecbd9ddfa57fd00",
+  "code_license": "none (no LICENSE file; nvdiffrast submodule is NVIDIA research-only, smplx non-commercial)",
+  "weights_license": "n/a - no model weights released",
+  "scores": {
+    "usefulness": 2,
+    "code_quality": 2,
+    "security": 2,
+    "license": 1,
+    "extensibility": 3,
+    "physics": 2,
+    "applications": 2,
+    "motion_control": 3
+  },
+  "overall": 2.1,
+  "verdict": "SKIP",
+  "one_liner": "DriveStudio fork minus its training script; the world model and cousin-data strategy it is named for were never released.",
+  "vram_gb": 24,
+  "action_conditioned": false,
+  "weights_public": false
+}

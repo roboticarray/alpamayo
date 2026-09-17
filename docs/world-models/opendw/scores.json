@@ -1,0 +1,23 @@
+{
+  "repo": "dexmal/opendw",
+  "dir": "opendw",
+  "commit": "e33befa8005a1585e0140dbf464566e90bc79aa1",
+  "code_license": "Apache-2.0 (LICENSE, pyproject.toml)",
+  "weights_license": "Apache-2.0 (HF cards on Dexmal/DW05-Base and Dexmal/DW05-Robotwin, with a NOTICE attributing Wan2.2 and uMT5, both Apache-2.0)",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 4,
+    "security": 3,
+    "license": 5,
+    "extensibility": 5,
+    "physics": 3,
+    "applications": 3,
+    "motion_control": 5
+  },
+  "overall": 4.0,
+  "verdict": "ADOPT",
+  "one_liner": "Apache-2.0 world-action model with a 32-D padded cross-embodiment action interface; best-engineered repo here, but publishes zero results.",
+  "vram_gb": null,
+  "action_conditioned": true,
+  "weights_public": true
+}

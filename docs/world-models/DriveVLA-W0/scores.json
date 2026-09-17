@@ -1,0 +1,23 @@
+{
+  "repo": "mingchang93/DriveVLA-W0",
+  "dir": "DriveVLA-W0",
+  "commit": "a55766ce46ee55d9035b93816e57b8d933166482",
+  "code_license": "none (no LICENSE file; all rights reserved)",
+  "weights_license": "none stated (no license tag on liyingyan/DriveVLA-W0)",
+  "scores": {
+    "usefulness": 2,
+    "code_quality": 1,
+    "security": 2,
+    "license": 1,
+    "extensibility": 2,
+    "physics": 2,
+    "applications": 2,
+    "motion_control": 4
+  },
+  "overall": 2.0,
+  "verdict": "WATCH",
+  "one_liner": "SOTA NAVSIM planner whose world model is a 256x144 auxiliary loss; no license anywhere and the flagship script does not import.",
+  "vram_gb": 24,
+  "action_conditioned": true,
+  "weights_public": true
+}

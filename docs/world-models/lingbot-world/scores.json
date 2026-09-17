@@ -1,0 +1,23 @@
+{
+  "repo": "robbyant/lingbot-world",
+  "dir": "lingbot-world",
+  "commit": "a43bec7f8091c83e9b30b16b912f6fc906236fa6",
+  "code_license": "Apache-2.0",
+  "weights_license": "Apache-2.0",
+  "scores": {
+    "usefulness": 3,
+    "code_quality": 2,
+    "security": 3,
+    "license": 5,
+    "extensibility": 3,
+    "physics": 2,
+    "applications": 2,
+    "motion_control": 3
+  },
+  "overall": 2.9,
+  "verdict": "WATCH",
+  "one_liner": "Apache-2.0 Wan2.2 fork with continuous SE(3) Plucker camera conditioning, but scale-normalized, no training code, repo abandoned.",
+  "vram_gb": 640,
+  "action_conditioned": true,
+  "weights_public": true
+}

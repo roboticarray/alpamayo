@@ -1,0 +1,23 @@
+{
+  "repo": "SkyworkAI/Matrix-Game",
+  "dir": "Matrix-Game",
+  "commit": "71c3cd7f741311f8100f6cf9cde942b6c1378d11",
+  "code_license": "Apache-2.0 (Matrix-Game-3/LICENSE.txt); repo root LICENSE is MIT",
+  "weights_license": "Apache-2.0 (Skywork/Matrix-Game-3.0); MIT for Skywork/Matrix-Game-2.0",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 3,
+    "security": 3,
+    "license": 5,
+    "extensibility": 4,
+    "physics": 3,
+    "applications": 3,
+    "motion_control": 4
+  },
+  "overall": 3.6,
+  "verdict": "TRIAL",
+  "one_liner": "MG-3.0 conditions on keyboard+mouse AND full SE(3) extrinsics, with FOV-overlap memory retrieval worth stealing; Apache-2.0 throughout.",
+  "vram_gb": 80,
+  "action_conditioned": true,
+  "weights_public": true
+}

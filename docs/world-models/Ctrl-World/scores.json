@@ -1,0 +1,23 @@
+{
+  "repo": "Robert-gyj/Ctrl-World",
+  "dir": "Ctrl-World",
+  "commit": "99fb20683fd79dfa6d0c6feb9d49c6c55eecd50d",
+  "code_license": "MIT (LICENSE.txt, Tsinghua University)",
+  "weights_license": "HF card says MIT, but the checkpoint is an SVD fine-tune and SVD is required at runtime: Stability AI Community License, free commercial use only under $1M annual revenue",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 2,
+    "security": 3,
+    "license": 3,
+    "extensibility": 2,
+    "physics": 3,
+    "applications": 2,
+    "motion_control": 4
+  },
+  "overall": 2.9,
+  "verdict": "TRIAL",
+  "one_liner": "Cleanest worked example of evaluating a real VLA policy in imagination; model itself is welded to DROID's 3-cam Franka rig.",
+  "vram_gb": null,
+  "action_conditioned": true,
+  "weights_public": true
+}
