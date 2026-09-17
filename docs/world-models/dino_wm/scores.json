@@ -1,0 +1,23 @@
+{
+  "repo": "gaoyuezhou/dino_wm",
+  "dir": "dino_wm",
+  "commit": "0a9492fa12044b852ae9e001cc74604b79c8bb0c",
+  "code_license": "MIT",
+  "weights_license": "Unclear - OSF-hosted checkpoints carry no licence file; frozen DINOv2 backbone has its own terms",
+  "scores": {
+    "usefulness": 3,
+    "code_quality": 3,
+    "security": 3,
+    "license": 4,
+    "extensibility": 4,
+    "physics": 2,
+    "applications": 2,
+    "motion_control": 3
+  },
+  "overall": 3.0,
+  "verdict": "TRIAL",
+  "one_liner": "MIT, one-GPU latent world model on frozen DINOv2 features with CEM/GD/MPC planning; small and hackable but only four toy sims.",
+  "vram_gb": 16,
+  "action_conditioned": true,
+  "weights_public": true
+}

@@ -1,0 +1,23 @@
+{
+  "repo": "facebookresearch/vjepa2",
+  "dir": "vjepa2",
+  "commit": "204698b45b3712590f06245fbfba32d3be539812",
+  "code_license": "MIT (3 files Apache-2.0)",
+  "weights_license": "Apache-2.0 for HF encoders; AC .pt on fbaipublicfiles has no attached license file",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 4,
+    "security": 3,
+    "license": 5,
+    "extensibility": 4,
+    "physics": 3,
+    "applications": 3,
+    "motion_control": 4
+  },
+  "overall": 3.8,
+  "verdict": "TRIAL",
+  "one_liner": "MIT latent video world model with a real action-conditioned CEM planner, proven closed-loop on a Franka; manipulation-only, 4 fps.",
+  "vram_gb": null,
+  "action_conditioned": true,
+  "weights_public": true
+}

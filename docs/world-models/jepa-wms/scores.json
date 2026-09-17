@@ -1,0 +1,23 @@
+{
+  "repo": "facebookresearch/jepa-wms",
+  "dir": "jepa-wms",
+  "commit": "13cf1d9c7e476f53c17714d2e0f1dc239a883ce0",
+  "code_license": "CC-BY-NC-4.0 (2 files Apache-2.0)",
+  "weights_license": "CC-BY-NC-4.0 (HF facebook/jepa-wms)",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 4,
+    "security": 2,
+    "license": 1,
+    "extensibility": 4,
+    "physics": 3,
+    "applications": 4,
+    "motion_control": 4
+  },
+  "overall": 3.3,
+  "verdict": "WATCH",
+  "one_liner": "Best-designed latent-WM planning harness (CEM/MPPI/Adam/Nevergrad x 6 sim envs), but CC-BY-NC code and weights block commercial use.",
+  "vram_gb": null,
+  "action_conditioned": true,
+  "weights_public": true
+}

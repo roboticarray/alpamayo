@@ -1,0 +1,23 @@
+{
+  "repo": "nvidia-cosmos/cosmos-reason2",
+  "dir": "cosmos-reason2",
+  "commit": "a3b4a1db4065fe13c4b1f4d2fb8605bad647f4b9",
+  "code_license": "Apache-2.0",
+  "weights_license": "NVIDIA Open Model License (gated on HF, license: other)",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 4,
+    "security": 4,
+    "license": 3,
+    "extensibility": 4,
+    "physics": 2,
+    "applications": 4,
+    "motion_control": 3
+  },
+  "overall": 3.5,
+  "verdict": "TRIAL",
+  "one_liner": "Qwen3-VL physical-reasoning VLM (2B/8B/32B); cheap, clean, great for AV auto-labelling and eval, but no dynamics or actions.",
+  "vram_gb": 24,
+  "action_conditioned": false,
+  "weights_public": true
+}

@@ -1,0 +1,23 @@
+{
+  "repo": "nvidia-cosmos/cosmos-transfer2.5",
+  "dir": "cosmos-transfer2.5",
+  "commit": "2ff49d0717af02057ae79bc75c00fbff9da1b4e7",
+  "code_license": "Apache-2.0",
+  "weights_license": "NVIDIA Open Model License (gated on HF)",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 4,
+    "security": 3,
+    "license": 3,
+    "extensibility": 4,
+    "physics": 2,
+    "applications": 4,
+    "motion_control": 2
+  },
+  "overall": 3.3,
+  "verdict": "TRIAL",
+  "one_liner": "Multi-ControlNet video restyler for sim2real/real2real augmentation; strong AV multiview data factory, no actions or dynamics.",
+  "vram_gb": 65.4,
+  "action_conditioned": false,
+  "weights_public": true
+}

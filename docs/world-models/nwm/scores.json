@@ -1,0 +1,23 @@
+{
+  "repo": "facebookresearch/nwm",
+  "dir": "nwm",
+  "commit": "3f6cd8e70d6f2d1e2b9684acff510710135f0f41",
+  "code_license": "CC-BY-NC-4.0",
+  "weights_license": "Conflicting: README says CC-BY-NC-4.0, HF facebook/nwm tagged cc-by-4.0 and gated",
+  "scores": {
+    "usefulness": 3,
+    "code_quality": 2,
+    "security": 2,
+    "license": 1,
+    "extensibility": 3,
+    "physics": 3,
+    "applications": 3,
+    "motion_control": 3
+  },
+  "overall": 2.5,
+  "verdict": "WATCH",
+  "one_liner": "Action- and time-conditioned diffusion world model for robot navigation with CEM planning; NC-licensed, gated weights, offline-only.",
+  "vram_gb": 24,
+  "action_conditioned": true,
+  "weights_public": false
+}

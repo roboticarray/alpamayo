@@ -1,0 +1,23 @@
+{
+  "repo": "nvidia-cosmos/cosmos-predict2.5",
+  "dir": "cosmos-predict2.5",
+  "commit": "a2c298b0a3df3778b973fe65e9e58877b292d8a7",
+  "code_license": "Apache-2.0",
+  "weights_license": "NVIDIA Open Model License (gated on HF)",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 4,
+    "security": 3,
+    "license": 3,
+    "extensibility": 4,
+    "physics": 4,
+    "applications": 5,
+    "motion_control": 4
+  },
+  "overall": 3.9,
+  "verdict": "TRIAL",
+  "one_liner": "Action-conditioned video WFM (2B/14B) with AV multiview + robot policy variants; strong but upstream declared EOL for Cosmos 3.",
+  "vram_gb": 80,
+  "action_conditioned": true,
+  "weights_public": true
+}

@@ -1,0 +1,23 @@
+{
+  "repo": "SenseTime-FVG/OpenDWM",
+  "dir": "OpenDWM",
+  "commit": "b0ecc3d4020612376ea5a87500f98bc76893428f",
+  "code_license": "MIT",
+  "weights_license": "Apache-2.0 (wzhgba/opendwm-models); base SD 3.5 (Stability AI Community License) or SD 2.1 (OpenRAIL++-M) required to run",
+  "scores": {
+    "usefulness": 4,
+    "code_quality": 3,
+    "security": 3,
+    "license": 4,
+    "extensibility": 5,
+    "physics": 3,
+    "applications": 4,
+    "motion_control": 4
+  },
+  "overall": 3.8,
+  "verdict": "ADOPT",
+  "one_liner": "MIT multi-view (6-cam) driving world model with HD-map/box layout conditioning, LiDAR models, and a CARLA-in-the-loop demo.",
+  "vram_gb": 80,
+  "action_conditioned": true,
+  "weights_public": true
+}
